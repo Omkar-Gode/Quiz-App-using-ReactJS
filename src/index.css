@@ -1,13 +1,359 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+  background-color: black;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Cambria;
+  /* justify-content: center; */
 }
+
+.progress{
+  /* background-color: aquamarine; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* align-items: center; */
+  margin-top: 4%;
+  margin-bottom: 3%;
+}
+
+.progress progress{
+  width: 70%;
+}
+
+.progress div{
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.progress div div{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.startscreen{
+  font-size: 30px;
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startscreen p{
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+.startscreen button{
+  width: 40%;
+  font-size: 20px;
+  padding: 1% 5%;
+  margin-right: 3%;
+  margin-top: 10%;
+  border-radius: 40px;
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.startscreen button:hover{
+  background-color: rgb(47, 47, 47);
+  font-weight: 700;
+}
+
+.error{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+}
+
+.loading{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+
+}
+
+.loader{
+  width: 40px;
+  height: 40px;
+  border: solid black 5px;
+  border-left: solid white 5px;
+  border-top: solid white 5px;
+  background-color: black;
+  border-radius: 50%;
+  margin-bottom: 10%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Vampire\ Wars.ttf);
+}
+
+.header h1{
+  font-size: 100px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  font-family: myFirstFont;
+}
+
+.question{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: antiquewhite; */
+}
+
+.question p{
+  font-size: 30px;
+  padding-bottom: 2%;
+}
+
+.options {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.options div div{
+  height: 100%;
+  width: 10%;
+  font-size: 27px;
+  /* background-color: aqua; */
+}
+
+.option{
+  width: 70%;
+  padding: 1% 0;
+  margin: 1% 0;
+  border-radius: 20px;
+  background-color: black;
+  border-color: white;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.option-selected{
+  width: 70%;
+  padding: 1% 0;
+  margin: 1% 0;
+  /* margin-left: 15%; */
+  border-radius: 20px;
+  background-color: black;
+  border-color: white;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.option-selected-correct{
+  width: 70%;
+  padding: 1% 0;
+  margin: 1% 0;
+  /* margin-left: 15%; */
+  border-radius: 40px;
+  background-color:  rgb(66, 242, 255);;
+  color: black;
+  border: solid white 3px;
+  font-weight: 700;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.option-selected-incorrect{
+  width: 70%;
+  padding: 1% 0;
+  margin: 1% 0;
+  /* margin-left: 15%; */
+  border-radius: 40px;
+  background-color: rgb(255, 192, 66);
+  color: black;
+  border: solid white 3px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.option-incorrect{
+  width: 70%;
+  padding: 1% 0;
+  margin: 1% 0;
+  border-radius: 20px;
+  background-color: rgb(255, 192, 66);
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.option-correct{
+  width: 70%;
+  padding: 1% 0;
+  margin: 1% 0;
+  border-radius: 20px;
+  background-color: rgb(66, 242, 255);
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.option:hover{
+  background-color: rgb(47, 47, 47);
+  font-weight: 700;
+}
+
+.nextButton{
+  width: 30%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.nextButton button{
+  font-size: 15px;
+  padding: 1% 5%;
+  margin-right: 3%;
+  border-radius: 40px;
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.nextButton button:hover{
+  background-color: rgb(47, 47, 47);
+  font-weight: 700;
+}
+
+
+.finishscreen{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.finishscreen p{
+  margin: 2% 0;
+}
+
+.finishscreen button{
+  width: 20%;
+  font-size: 15px;
+  padding: 1% 5%;
+  margin-right: 3%;
+  margin-top: 2%;
+  border-radius: 40px;
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+.finishscreen button:hover{
+  background-color: rgb(47, 47, 47);
+  font-weight: 700;
+}
+
+.finishscreen img{
+  width: 25%;
+}
+/* body{
+  background-color: dodgerblue;
+} */
+
+
+/* .main div{
+  width:50%;
+  height:25%;
+  border: 3px solid black;
+  background-color: pink;
+} */
+
+/* @media screen and (max-width:600px){
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .main div{
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width:601px){
+  .main{
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .main{
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1200px){
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+  }
+
+  .main div{
+    width: 25%;
+    height: 700px;
+  }
+} */

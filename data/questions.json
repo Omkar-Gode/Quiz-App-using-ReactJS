@@ -1,0 +1,127 @@
+{
+    "questions":
+        [
+            {
+                "question":"What is One Piece?",
+                "options": ["Treasure","Friendship","Freedom","All Of The above"],
+                "correctOption": 3,
+                "points":10
+            },
+            {
+                "question":"Name of Gintoki's sword",
+                "options": ["kaientai","Lake Toya","X-calibur","Tatsuya"],
+                "correctOption": 1,
+                "points":10
+            },
+            {
+                "question":"Full name of kakashi",
+                "options": ["Kakashi Uchiha","Kakashi Uzumaki","Kakashi Hatake","None of Above"],
+                "correctOption": 2,
+                "points":10
+            },
+            {
+                "question":"What type of food does Naruto Uzumaki love the most?",
+                "options": ["Rice balls","Bhel","Ramen","Ice cream"],
+                "correctOption": 2,
+                "points":10
+            },
+            {
+                "question":"Who is the Fullmetal Alchemist?",
+                "options": ["Edward Elrich","Alphonse Elrich","Roy Mustang","Scar"],
+                "correctOption": 0,
+                "points":10
+            },
+            {
+                "question":"Name of the team of Hinata from Haikyuu",
+                "options": ["Shiratorizawa","Seiijo","Nekomata","Karasuno"],
+                "correctOption": 3,
+                "points":10
+            },
+            {
+                "question":"In the Dragon Ball series, what is the name of Goku’s home planet?",
+                "options": ["Planet Vegeta","Namek","Earth","None Of The above"],
+                "correctOption": 0,
+                "points":10
+            },
+            {
+                "question":"In One Piece, what is the name of Luffys first ship?",
+                "options": ["Thousand Sunny","Going Merry","Jackson","Merry go round"],
+                "correctOption": 1,
+                "points":10
+            },
+            {
+                "question":"Who said This line 'I may be a thief , but I only stal hearts' in Gintama?",
+                "options": ["Seita","Catherine","Kondo Isao","Gintoki"],
+                "correctOption": 2,
+                "points":10
+            },
+            {
+                "question":"Where was Gol D. Roger Executed?",
+                "options": ["Raftel","Grey Terminal","mock town","lougetown"],
+                "correctOption": 3,
+                "points":10
+            }
+        ],
+    "React-Quiz":[
+        {
+            "question":"What is the correct command to create a new React project?",
+            "options": ["npx create-react-app myApp","npm create-react-app","npm create-react-app myApp","npx create-react-app"],
+            "correctOption": 0,
+            "points":10
+        },
+        {
+            "question":"What command is used to start the React local development server?",
+            "options": ["npm build","npm run dev","npm serve","npm start"],
+            "correctOption": 3,
+            "points":10
+        },
+        {
+            "question":"What is the default local host port that a React development server uses?",
+            "options": ["5000","8080","3000","3500"],
+            "correctOption": 2,
+            "points":10
+        },
+        {
+            "question":"Which keyword creates a constant in JavaScript?",
+            "options": ["var","let","const","none of the above"],
+            "correctOption": 2,
+            "points":10
+        },
+        {
+            "question":"A copy of the 'real' DOM that is kept in memory is called what?",
+            "options": ["shadow DOM","DOM","React DOM","Virtual DOM"],
+            "correctOption": 3,
+            "points":10
+        },
+        {
+            "question":"Which operator can be used to conditionally render a React component?",
+            "options": ["&&","||","::","??"],
+            "correctOption": 0,
+            "points":10
+        },
+        {
+            "question":"When rendering a list using the JavaScript map() method, what is required for each element rendered?",
+            "options": ["id","key","name","index"],
+            "correctOption": 1,
+            "points":10
+        },
+        {
+            "question":"What tool does React use to compile JSX?",
+            "options": ["ReactDOM","JSX Compiler","Babel","React Router"],
+            "correctOption": 2,
+            "points":10
+        },
+        {
+            "question":"What is a common use case for ref?",
+            "options": ["to refer a function","to directly access DOM","to bind function","to refer to another JS file"],
+            "correctOption": 1,
+            "points":10
+        },
+        {
+            "question":"What is the children prop?",
+            "options": ["A property that lets you nest components in other components  ","A property that adds child values to state","A property that lets you set an object as a property","A property that lets you pass data to child components"],
+            "correctOption": 0,
+            "points":10
+        }
+    ]
+}
